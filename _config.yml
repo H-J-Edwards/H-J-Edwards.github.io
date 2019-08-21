@@ -1,40 +1,68 @@
-# Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        ""
-url:            "https://H-J-Edwards.github.io"
+# Site
+title:              Testy
+bio:                'Jekyll version of the Massively theme by HTML5UP'
+description:        "Jekyll version of the Massively theme by HTML5UP"
+locale:             en_UK
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# Comments
+disqus_shortname:   default
 
-# Author
-author:
-  name:         Harry Edwards
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+# Social
+analytics-id:       "default"
+twitter:            default
+facebook:           default
+instagram:          default
+github:             default
 
-# Build settings
-markdown:       kramdown
-include:
-  - _pages
+# personal
+location:           Helston, Cornwall
+phone:              310-318-5555
+email:              HJEdwards@outlook.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
-# Assets
+# Other
+background_image:   /images/bg.jpg
+# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
+slapform_thankyou_page: /thank-you
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
+
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
 sass:
-  sass_dir:     _sass
-  style:        compressed
+  sass_dir:         _sass
+  style:            compressed
 
 # Gems
-plugins:
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-gist
   - jekyll-paginate
-  - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
 
-theme: tale
+paginate: 6
+paginate_path: "/blog/page:num/"
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+jekyll-mentions:
+    base_url: https://github.com
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
