@@ -3,7 +3,7 @@ layout: post
 title:  "First Test"
 date:   2019-08-20
 excerpt: "This is pretty great"
-image: "/images/blobby.gif"
+image: "/images/treason.mp4"
 ---
 
 ## How to Use This Theme
