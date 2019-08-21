@@ -1,8 +1,4 @@
-remote_theme: chesterhow/tale
+theme: tale
 
 permalink:    /:year-:month-:day/:title
 paginate:     5
-
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
